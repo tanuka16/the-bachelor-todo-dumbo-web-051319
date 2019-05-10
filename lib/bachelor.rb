@@ -53,8 +53,8 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  total_age = 0
-  data[season].each do |contestant|
+  total_age = 0                                       #set initial age to 0
+  data[season].each do |contestant|                     #loop through data & season, 
     total_age += contestant['age'].to_i                 #to_i is a method which help us to convert value from different data like string, float into int. This is also called typecasting of values.
   end
   average = total_age.to_f/data[season].length
