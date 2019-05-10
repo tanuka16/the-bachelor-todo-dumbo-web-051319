@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data[season].each do |contestant|
     if contestant['status'] == 'Winner'
-      return contestant["name"].split(' ').first
+      return contestant["name"].split(' ').first            #.first returns the first element of the array
     end
 end
 =begin  data.each do |season_num, contestants|
